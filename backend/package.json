@@ -1,0 +1,46 @@
+{
+  "name": "novexa-backend",
+  "version": "1.0.0",
+  "description": "NOVEXA Backend API - E-book Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "migrate": "node db/runners/migrate.js",
+    "migrate:rollback": "node db/runners/rollback.js",
+    "seed": "node db/runners/seed.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": ["ebook", "platform", "api"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "dotenv": "^16.0.3",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5-lts.1",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "winston": "^3.9.0",
+    "nodemailer": "^6.9.3",
+    "compression": "^1.7.4",
+    "rate-limiter-flexible": "^4.1.1",
+    "swagger-ui-express": "^5.0.0",
+    "swagger-jsdoc": "^6.2.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3",
+    "eslint": "^8.45.0",
+    "@types/jest": "^29.5.3"
+  }
+  
+}
