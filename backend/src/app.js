@@ -46,11 +46,6 @@ app.use(
   express.static(path.join(__dirname, 'uploads/covers'))
 );
 
-// routes
-app.use('/api/auth', authRoutes);
-app.use('/api/buku', bukuRoutes);
-// dll...
-
 // health check / root
 app.get('/', (req, res) => {
   res.json({ status: 'ok' });
@@ -68,6 +63,7 @@ app.get('/', (req, res) => {
 });
 
 module.exports = app;
+
 
 
 
