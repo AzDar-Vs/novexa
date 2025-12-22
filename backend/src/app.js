@@ -53,12 +53,15 @@ app.use((req, res) => {
     path: req.originalUrl
   });
 });
-
+/* middleware */
+app.use(cors());
+app.use(express.json());
 app.get('/', (req, res) => {
   res.send('API NOVEXA jalan di Railway 🚄');
 });
 
 module.exports = app;
+
 
 
 
