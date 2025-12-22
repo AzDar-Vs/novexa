@@ -46,10 +46,6 @@ app.use(
   express.static(path.join(__dirname, 'uploads/covers'))
 );
 
-// health check / root
-app.get('/', (req, res) => {
-  res.json({ status: 'ok' });
-});
 /* ================= 404 HANDLER (PENTING) ================= */
 app.use((req, res) => {
   res.status(404).json({
@@ -63,6 +59,7 @@ app.get('/', (req, res) => {
 });
 
 module.exports = app;
+
 
 
 
