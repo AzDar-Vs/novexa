@@ -57,6 +57,9 @@ app.use((req, res) => {
 app.get('/', (req, res) => {
   res.send('API NOVEXA jalan di Railway 🚄');
 });
+app.use('/api/auth', authRoutes);
+app.use('/api/buku', bukuRoutes);
 
 module.exports = app;
+
 
