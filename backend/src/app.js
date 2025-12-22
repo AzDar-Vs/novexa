@@ -46,13 +46,7 @@ app.use(
   express.static(path.join(__dirname, 'uploads/covers'))
 );
 
-/* ================= 404 HANDLER (PENTING) ================= */
-app.use((req, res) => {
-  res.status(404).json({
-    message: 'Route not found',
-    path: req.originalUrl
-  });
-});
+
 /* middleware */
 app.use(cors());
 app.use(express.json());
@@ -61,6 +55,7 @@ app.get('/', (req, res) => {
 });
 
 module.exports = app;
+
 
 
 
