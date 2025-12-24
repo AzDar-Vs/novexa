@@ -1,0 +1,46 @@
+body {
+  background: linear-gradient(135deg, #0f3d2e, #1f7a5c);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  background-color: #f7f3eb;
+  border-radius: 16px;
+  padding: 30px;
+  width: 380px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.auth-card h3 {
+  color: #0f3d2e;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background-color: #1f7a5c;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #155c45;
+}
+
+.form-control {
+  border-radius: 10px;
+}
+.navbar {
+  background-color: #0f3d2e;
+}
+
+.hero {
+  background: #f7f3eb;
+  min-height: 80vh;
+}
+
+.btn-primary {
+  background-color: #1f7a5c;
+  border: none;
+}
